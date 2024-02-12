@@ -15,6 +15,11 @@ def fill_form_8(pdf_path, user_data, font_size = 8, font_name="Times-Roman"):
     overlay_text_on_pdf(pdf_path = pdf_path, 
                     text = full_name, x = 220, y = 227, page_number = 1, output_path = output_path,
                     font_name=font_name, font_size=font_size)
+    
+    on_behalf_of =  "PARK HYATT HYDERABAD"
+    overlay_text_on_pdf(pdf_path = output_path, 
+                    text = on_behalf_of, x = 220, y = 208, page_number = 1, output_path = output_path,
+                    font_name=font_name, font_size=font_size)
 
 
     return output_path

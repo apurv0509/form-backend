@@ -79,6 +79,14 @@ def populate_docx_template(template_path, data):
                 else:
                     pass
         
+        if table_itr == 6:
+            for row_itr, row in enumerate(table.rows):
+                for i in range(len(row.cells)):
+                    row.cells[i].vertical_alignment = WD_ALIGN_VERTICAL.BOTTOM
+                if row_itr == 2:
+                    row.cells[1].text = data['emergency_name'].upper()
+                    row.cells[3].text = data['emergency_contact']
+
         for row in table.rows:
             for cell in row.cells:
                 # Create a new paragraph and set its font size and name

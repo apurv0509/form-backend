@@ -31,7 +31,7 @@ def download_form_2():
     try:
         user_data = request.json['formData']
         pdf2 = "./templates/2. FORM  F Nomination Gratuity Act..pdf"
-        output_path = fill_form_2(pdf_path=pdf2, user_data=user_data, font_name="Times-Roman", font_size=8)
+        output_path = fill_form_2(pdf_path=pdf2, user_data=user_data, font_name="Times-Roman", font_size=10)
         return send_file(output_path, as_attachment=True)
     except Exception as e:
         return jsonify({'error': str(e)}), 500
@@ -106,6 +106,6 @@ def download_form_9():
     except Exception as e:
         return jsonify({'error': str(e)}), 500
 
-# PORT = 5013
+PORT = 5010
 if __name__ == '__main__':
     app.run()

@@ -111,4 +111,61 @@ def fill_form_4(pdf_path, user_data, font_size = 8, font_name="Times-Roman"):
     overlay_text_on_pdf(pdf_path = output_path, 
                         text = ddmmyyyy, x = 300, y = 380, page_number = 6, output_path = output_path,
                         font_name=font_name, font_size=font_size)
+    
+
+    overlay_text_on_pdf(pdf_path = output_path, 
+                text = user_data['emergency_name'].upper(), x = 190, y = 225, page_number = 4, output_path = output_path,
+                font_name=font_name, font_size=font_size)
+
+    overlay_text_on_pdf(pdf_path = output_path, 
+                    text = user_data['emergency_contact'], x = 410, y = 225, page_number = 4, output_path = output_path,
+                    font_name=font_name, font_size=font_size)
+
+    overlay_text_on_pdf(pdf_path = output_path, 
+                    text = user_data['designation'], x = 130, y = 607, page_number = 1, output_path = output_path,
+                    font_name=font_name, font_size=font_size)
+
+    overlay_text_on_pdf(pdf_path = output_path, 
+                    text = user_data['department'], x = 340, y = 607, page_number = 1, output_path = output_path,
+                    font_name=font_name, font_size=font_size)
+
+    overlay_text_on_pdf(pdf_path = output_path, 
+                    text = user_data['designation'], x = 163, y = 451, page_number = 2, output_path = output_path,
+                    font_name=font_name, font_size=font_size)
+
+    overlay_text_on_pdf(pdf_path = output_path, 
+                    text = user_data['department'], x = 155, y = 435, page_number = 2, output_path = output_path,
+                    font_name=font_name, font_size=font_size)
+
+    overlay_text_on_pdf(pdf_path = output_path, 
+                    text = user_data['designation'], x = 365, y = 592, page_number = 3, output_path = output_path,
+                    font_name=font_name, font_size=font_size)
+
+    overlay_text_on_pdf(pdf_path = output_path, 
+                    text = user_data['department'], x = 80, y = 576, page_number = 3, output_path = output_path,
+                    font_name=font_name, font_size=font_size)
+
+    overlay_text_on_pdf(pdf_path = output_path, 
+                    text = doj_ddmmyyyy, x = 300, y = 576, page_number = 3, output_path = output_path,
+                    font_name=font_name, font_size=font_size)
+
+    overlay_text_on_pdf(pdf_path = output_path, 
+                    text = user_data['designation'], x = 170, y = 660, page_number = 4, output_path = output_path,
+                    font_name=font_name, font_size=font_size)
+
+    overlay_text_on_pdf(pdf_path = output_path, 
+                    text = user_data['department'], x = 373, y = 660, page_number = 4, output_path = output_path,
+                    font_name=font_name, font_size=font_size)
+
+    overlay_text_on_pdf(pdf_path = output_path, 
+                    text = user_data['religion'], x = 170, y = 615, page_number = 4, output_path = output_path,
+                    font_name=font_name, font_size=font_size)
+
+    overlay_text_on_pdf(pdf_path = output_path, 
+                    text = user_data['designation'], x = 300, y = 480, page_number = 6, output_path = output_path,
+                    font_name=font_name, font_size=font_size)
+
+    overlay_text_on_pdf(pdf_path = output_path, 
+                    text = user_data['department'], x = 300, y = 440, page_number = 6, output_path = output_path,
+                    font_name=font_name, font_size=font_size)
     return output_path

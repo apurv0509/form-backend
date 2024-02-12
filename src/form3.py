@@ -16,7 +16,7 @@ def fill_form_3(pdf_path, user_data, font_size = 8, font_name="Times-Roman"):
                     font_name=font_name, font_size=font_size)
 
     overlay_text_on_pdf(pdf_path = output_path, 
-                        text = user_data['fathers_name'].upper(), x = 320, y = 660, page_number = 1, output_path = output_path,
+                        text = user_data['fathers_name'].upper().split(' ')[0], x = 320, y = 660, page_number = 1, output_path = output_path,
                         font_name=font_name, font_size=font_size)
 
     overlay_text_on_pdf(pdf_path = output_path, 

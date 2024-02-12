@@ -16,6 +16,10 @@ def fill_form_6(pdf_path, user_data, font_size = 8, font_name="Times-Roman"):
     overlay_text_on_pdf(pdf_path =pdf_path, 
                     text = full_name, x = 170, y = 680, page_number = 1, output_path = output_path,
                     font_name=font_name, font_size=font_size)
+    
+    overlay_text_on_pdf(pdf_path = output_path, 
+                text = user_data['department'], x = 375, y = 650, page_number = 1, output_path = output_path,
+                font_name=font_name, font_size=font_size)
 
 
     return output_path

@@ -71,6 +71,15 @@ def fill_form_7(pdf_path, user_data, font_size = 8, font_name="Times-Roman"):
     overlay_text_on_pdf(pdf_path = output_path, 
                         text = full_name, x = 80, y = 140, page_number = 1, output_path = output_path,
                         font_name=font_name, font_size=font_size)
+    
+    overlay_text_on_pdf(pdf_path = output_path, 
+                text = user_data['designation'], x = 30, y = 680, page_number = 1, output_path = output_path,
+                font_name=font_name, font_size=font_size)
+    
+    location = "PARK HYATT HYDERABAD"
+    overlay_text_on_pdf(pdf_path = output_path, 
+                    text = location, x = 370, y = 680, page_number = 1, output_path = output_path,
+                    font_name=font_name, font_size=font_size)
 
 
     return output_path
