@@ -1,0 +1,15 @@
+aiofiles==23.2.1
+docx==0.2.4
+Flask==3.0.2
+Flask-Cors==4.0.0
+PyPDF2==3.0.1
+python-docx==1.1.0
+rdflib==7.0.0
+reportlab==4.0.9
+requests
+simplejson==3.19.2
+simplify-docx==0.1.2
+tabula-py==2.9.0
+txt2docx==1.0.2
+typing_extensions==4.9.0
+urllib3
